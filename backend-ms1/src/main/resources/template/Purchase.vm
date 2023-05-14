@@ -100,7 +100,7 @@
             <div style="text-align: left"><span style="font-weight: bold">PurchaseDate:</span> $purchaseDate</div>
             <div style="text-align: left"><span style="font-weight: bold">Image:</span> $image</div>
             <div style="text-align: left"><span style="font-weight: bold">Total:</span> $total</div>
-            <div style="text-align: left"><span style="font-weight: bold">Client:</span> $client.fullName/div>
+            <div style="text-align: left"><span style="font-weight: bold">Client:</span> $client.fullName</div>
 
 
     </div><br/><br/><br/><br/><br/>
@@ -114,7 +114,7 @@
         </thead>
 
         <tbody>
-                #foreach( $item in purchaseItems )
+                #foreach( $item in $purchaseItems)
                 #if( ($foreach.index % 2) == 0 )
                 <tr style="background-color: #f4f5f6">
                 #else<tr style="background-color: #e9ebec">
